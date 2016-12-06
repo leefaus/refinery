@@ -20,5 +20,10 @@ import "phoenix_html"
 
 // import socket from "./socket"
 
-const elmDiv = document.getElementById('elm-main')
-    , elmApp = Elm.Refinery.embed(elmDiv)
+// const mainDiv = document.getElementById('elm-main')
+//     , mainApp = Elm.Refinery.embed(mainDiv)
+
+const refineryDiv = document.getElementById("elm-embed-refinery")
+if (refineryDiv != undefined) {
+  Elm.Refinery.embed(refineryDiv)
+}
